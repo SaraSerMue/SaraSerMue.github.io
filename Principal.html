@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Sara Muserkup - Bienestar Personal</title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Enlace al archivo de estilos principal -->
+<link href="estilo/styles.css" rel="stylesheet">
+</head>
+<body style="background-image: url('imagenes/fondo.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+<!-- Encabezado principal con título y subtítulo -->
+<header class="encabezado-hero">
+<h1>SARA MUSERKUP</h1>
+<h2>BIENESTAR PERSONAL</h2>
+</header>
+<!-- Navegación entre pestañas/secciones -->
+<nav>
+<button class="btn-pestana activo" data-tab="eventos">EVENTOS</button>
+<button class="btn-pestana" data-tab="pasalo">PÁSALO BIEN</button>
+<button class="btn-pestana" data-tab="sesion">SESIÓN DE FOTOS</button>
+<button class="btn-pestana" data-tab="newsletter">NEWSLETTER</button>
+<button class="btn-pestana" data-tab="contacto">CONTACTO</button>
+</nav>
+<main>
+<!-- Sección de EVENTOS con imágenes clicables -->
+<section class="contenido-seccion activo" id="eventos">
+<div class="imagenes-eventos" style="display: flex; justify-content: center;"><a href="eventos1.html" target="_blank"><img alt="Eventos" src="imagenes/evento2.jpg"></a></div>
+<div class="footer-text">Haz que tu momento sea especial</div>
+</section>
+<!-- Sección de PÁSALO BIEN -->
+<section class="contenido-seccion" id="pasalo">
+<div class="imagenes-pasalo" style="display: flex; justify-content: center;"><a href="pasalo1.html" target="_blank"><img alt="Pasalo" src="imagenes/pasalobien1.jpg"></a></div>
+<div class="footer-text">Sé el alma de la fiesta con un maquillaje personalizado</div>
+</section>
+<!-- Sección de SHOOTING -->
+<section class="contenido-seccion" id="sesion">
+<div class="imagenes-sesion" style="display: flex; justify-content: center;"><a href="sesion1.html" target="_blank"><img alt="Sesion" src="imagenes/shooting1.jpg"></a></div>
+<div class="footer-text">
+        Shooting<br/>
+        fifty/fifty<br/>
+        Juntemos tu arte y el mío para hacer magia
+      </div>
+</section>
+<!-- Sección de newsletter de suscripción -->
+<section class="contenido-seccion" id="newsletter">
+<div class="seccion-newsletter">
+<p>Suscríbete a mi newsletter para enterarte de las últimas novedades, ofertas, calendario de disponibilidad y eventos especiales. ¡No te lo pierdas!</p>
+<form id="formularioNewsletter">
+<label for="nombre">Nombre</label>
+<input id="nombre" name="nombre" placeholder="Tu nombre" required="" type="text">
+<p><label for="correo">Correo electrónico <span style="color: red;">*</span></label></p>
+<input id="correo" name="correo" placeholder="tuemail@ejemplo.com" required="" type="email">
+<input type="submit" value="Suscribirse"/>
+</form>
+<div id="gracias" style="display:none; margin-top:10px; font-weight:bold;">¡Gracias por suscribirte!</div>
+</div>
+</section>
+<!-- Sección de CONTACTO -->
+<section class="contenido-seccion" id="contacto">
+  <div class="seccion-contacto">
+    <p>Puedes ponerte en contacto conmigo a través de los siguientes medios:</p>
+    <ul>
+      <li><strong>Correo electrónico:</strong> <a href="mailto:sara.muserkup@gmail.com">sara.muserkup@gmail.com</a></li>
+      <li><strong>Instagram:</strong> <a href="https://instagram.com/sara.muserkup" target="_blank">📷 @sara.muserkup</a></li>
+    </ul>
+  </div>
+</section>
+<!-- Enlace al script para funcionalidad de pestañas -->
+<script src="js/script.js"></script>
+</body>
+</html>

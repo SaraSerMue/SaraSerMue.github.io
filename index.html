@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--enlaces a hojas de estilo -->
+  <meta charset="UTF-8" />
+  <title>Sara Muserkup - Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="estilo/styles.css" />
+  <style>
+    .pagina-inicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background-image: url('imagenes/fondo.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .presentacion {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: 20px;
+    }
+
+    .presentacion h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: var(--rosa-maquillaje-oscuro-letras);
+    }
+
+    .presentacion p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .boton-enlace {
+      background-color: var(--rosa-maquillaje-oscuro-letras);
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .boton-enlace:hover {
+      background-color: var(--rosa-maquillaje-menu);
+      color: var(--rosa-maquillaje-oscuro-letras);
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido principal del cuerpo -->
+  <div class="pagina-inicio">
+    <div class="presentacion">
+      <h1>Soy Sara Muserkup</h1>
+      <p>Maquilladora profesional dedicada a ayudarte a expresar quién eres a través del arte del maquillaje. Desde eventos únicos hasta sesiones creativas, aquí encontrarás inspiración, pasión y mucha belleza.</p>
+      <a href="Principal.html" class="boton-enlace">ENCUENTRA LO QUE BUSCAS</a>
+    </div>
+  </div>
+</body>
+</html>
